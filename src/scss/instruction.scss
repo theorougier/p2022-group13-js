@@ -10,11 +10,12 @@
 }
 
 .instruction__lines {
+  position: absolute;
   background-image: url("/screens/img/instructions-ligne.png");
   width: 433px;
   height: 351px;
-  margin-top: 340px;
-  margin-left: 780px;
+  top: 350px;
+  left: 922px;
 }
 
 .son {
