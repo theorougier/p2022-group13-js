@@ -1,35 +1,25 @@
 .background__niv1 {
     background-image: url('/screens/img/background1.png');
+    background-repeat: no-repeat;
     width: 1366px;
     height: 750px;
-    margin-left: 90px;
+    margin-left: 80px;
   }
 
   .background__niv2 {
     background-image: url('/screens/img/background2.png');
+    background-repeat: no-repeat;
     width: 1366px;
     height: 750px;
-    margin-left: 90px;
+    margin-left: 80px;
   }
 
   .background__niv3 {
     background-image: url('/screens/img/background3.png');
+    background-repeat: no-repeat;
     width: 1366px;
     height: 750px;
-    margin-left: 90px;
-  }
-
-
-  .background__frame {
-
-    position: relative;
-    background-color: white;
-    opacity: 0.2;
-    position: absolute;
-    width: 369px;
-    height: 750px;
-    left: 1085px;
-    top: 0px;
+    margin-left: 80px;
   }
 
   .background__title {
@@ -67,7 +57,7 @@
    position: relative;
    width: 42px;
    height: 22px;
-   left: 1250px;
+   left: 1165px;
    top: 429px;
  }
 
