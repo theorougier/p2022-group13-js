@@ -1,4 +1,4 @@
-    oxo.screens.loadScreen('game3', function(){
+    oxo.screens.loadScreen('game', function(){
 
       var card = document.querySelectorAll('.card__city');
       
