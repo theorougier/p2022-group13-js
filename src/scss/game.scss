@@ -34,6 +34,16 @@
     top: 72px;
   }
 
+  .background__frame {
+    background-image: url('/screens/img/Cadre.png');
+    position: absolute;
+    width: 371px;
+    height: 264px;
+    left: 1070px;
+    top: 199px;
+    z-index: 2;
+  }
+
   .background__profile {
     position: absolute;
     width: 162px;
