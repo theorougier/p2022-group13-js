@@ -2,7 +2,7 @@
 oxo.screens.loadScreen('home', function() {
 const btn = document.querySelector('.Menu__play')
  btn.addEventListener("click", function(){
-    oxo.screens.loadScreen('game3', function(){
+    oxo.screens.loadScreen('game2', function(){
 
       var card = document.querySelectorAll('.card__city');
       
@@ -15,8 +15,10 @@ for(let i=0;i<card.length;i++){
 var card1 = document.querySelectorAll('.card__foret');
       
 for(let i=0;i<card1.length;i++){
+
    card1[i].addEventListener('click',function(){
       card1[i].style.opacity=0;
+      
       })
 
 }
