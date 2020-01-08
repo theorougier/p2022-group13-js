@@ -1,3 +1,5 @@
+// fond des niveaux
+
 .background__niv1 {
     background-image: url('/screens/img/background1.png');
     background-repeat: no-repeat;
@@ -22,6 +24,7 @@
     margin-left: 80px;
   }
 
+  //Mise en place
   .background__title {
     position: relative;
     background-image: url('/screens/img/title.png');
@@ -71,6 +74,111 @@
    top: 429px;
  }
 
+ .gameplay__dialogue {
+   position: absolute;
+   left: 80px;
+   top: 0px;
+   width: 1366px;
+   height: 750px;
+   z-index: 3;
+ }
+
+
+// Hidden pour dialogue ou autre...
+ .hidden {
+   visibility: hidden;
+ }
+
+
+ //Dialogue Niveau 1
+ .niveau_1_flashback_Arbre {
+  background-image: url('/screens/img/Niveau_1_Flashback_Arbre.png');
+ }
+ .niveau_1_flashback_Hero {
+  background-image: url('/screens/img/Niveau_1_Flashback_Hero.png');
+ }
+
+ .niveau_1_flashback_Hero2 {
+  background-image: url('/screens/img/Niveau_1_Flashback_Hero_2.png');
+ }
+
+ .niveau_1_flashback_Sanglier {
+  background-image: url('/screens/img/Niveau_1_Flashback_Sanglier.png');
+ }
+
+ .niveau_1_flashback_Sanglier2 {
+  background-image: url('/screens/img/Niveau_1_Flashback_Sanglier_2.png');
+ }
+
+ .niveau_1_flashback_Sanglier3 {
+  background-image: url('/screens/img/Niveau_1_Flashback_Sanglier_3.png');
+ }
+
+ .niveau_1_flashback_Sanglier4 {
+  background-image: url('/screens/img/Niveau_1_Flashback_Sanglier_4.png');
+ }
+
+
+ //Dialogue Niveau 2
+ .niveau_2_flashback_Hero {
+  background-image: url('/screens/img/Niveau_2_Flashback_Hero.png');
+ }
+
+ .niveau_2_flashback_Hero_2 {
+  background-image: url('/screens/img/Niveau_2_Flashback_Hero_2.png');
+ }
+
+ .niveau_2_flashback_Hero_3 {
+  background-image: url('/screens/img/Niveau_2_Flashback_Hero_3.png');
+ }
+
+ .niveau_2_flashback_Hero_4 {
+  background-image: url('/screens/img/Niveau_2_Flashback_Hero_4.png');
+ }
+
+ .niveau_2_flashback_Hero_5 {
+  background-image: url('/screens/img/Niveau_2_Flashback_Hero_5.png');
+ }
+
+
+ .niveau_2_flashback_Fantôme1 {
+  background-image: url('/screens/img/niveau_2_flashback_Fantôme_1.png');
+ }
+
+ .niveau_2_flashback_Fantôme2 {
+  background-image: url('/screens/img/niveau_2_flashback_Fantôme_2.png');
+ }
+
+ .niveau_2_flashback_Fantôme3 {
+  background-image: url('/screens/img/niveau_2_flashback_Fantôme_3.png');
+ }
+
+ .niveau_2_flashback_Fantôme4 {
+  background-image: url('/screens/img/niveau_2_flashback_Fantôme_4.png');
+ }
+
+ .niveau_2_flashback_Fantôme5 {
+  background-image: url('/screens/img/niveau_2_flashback_Fantôme_5.png');
+ }
+
+ //Dialogue Niveau 3
+ .niveau_3_flashback_Hero {
+  background-image: url('/screens/img/Niveau_3_Flashback_Hero.png');
+ }
+
+ .niveau_3_flashback_Hero2 {
+  background-image: url('/screens/img/Niveau_3_Flashback_Hero_2.png');
+ }
+
+ .Niveau_3_Flashback_Squelette_1 {
+  background-image: url('/screens/img/Niveau_3_Flashback_Squelette_1.png');
+ }
+
+ .Niveau_3_Flashback_Squelette_2 {
+  background-image: url('/screens/img/Niveau_3_Flashback_Squelette_2.png');
+ }
+
+ //Coeur
  .gameplay__heart {
    background-image: url('/screens/img/heart.png');
    z-index: 2;
@@ -130,6 +238,7 @@
  top: 475px;
 }
 
+//Boutton
  .son{
    background-image: url('/screens/img/son.png');
    position: absolute;
@@ -169,6 +278,7 @@
  }
 
 
+ //Skin Carte Niveau 1
  .card__foret {
   background-image: url('/screens/img/Carte.png');
  }
@@ -205,6 +315,7 @@
   background-image: url('/screens/img/CARTE_PIEGE.png');
 }
 
+//Skin Carte Niveau 2
 
 .card__city {
   background-image: url('/screens/img/Carte_ville.png');
@@ -238,6 +349,8 @@
   background-image: url('/screens/img/chemin-triple-penché_City.png');
 }
 
+//Skin Carte Niveau 3
+
 .card__castle {
   background-image: url('/screens/img/Carte_chateau.png');
 }
@@ -270,6 +383,7 @@
   background-image: url('/screens/img/chemin-triple-penché_Castle.png');
 }
 
+// dos de carte
  @mixin place__card($left:0, $top: 0, $z-index: 0) {
   position: absolute;
   width: 100px;
@@ -343,6 +457,8 @@
   @include place__card($top: 535px, $left: 746px, $z-index: 2)
 
  }
+
+ // face de carte
 
  .gameplay__card__front0 {
   @include place__card($top: 79px, $left: 134px)

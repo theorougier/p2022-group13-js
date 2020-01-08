@@ -1,7 +1,3 @@
-
-oxo.screens.loadScreen('home', function() {
-const btn = document.querySelector('.Menu__play')
- btn.addEventListener("click", function(){
     oxo.screens.loadScreen('game3', function(){
 
       var card = document.querySelectorAll('.card__city');
@@ -31,7 +27,4 @@ for(let i=0;i<card2.length;i++){
 
     })
 
-
- })
-});
 
