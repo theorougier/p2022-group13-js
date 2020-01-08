@@ -18,7 +18,7 @@ for(let i=0;i<card1.length;i++){
 
    card1[i].addEventListener('click',function(){
       card1[i].style.opacity=0;
-      
+
       })
 
 }
@@ -30,6 +30,76 @@ for(let i=0;i<card2.length;i++){
       })
 
 }
+var cardtrap = document.querySelectorAll('.trap');
+      
+for(let i=0;i<cardtrap.length;i++){
+   cardtrap[i].addEventListener('click',function(){
+      cardtrap[i]
+      })
+
+}
+var cardleft = document.querySelectorAll('.left');
+      
+for(let i=0;i<cardleft.length;i++){
+   cardleft[i].addEventListener('click',function(){
+      cardleft[i]
+      })
+
+}
+var cardright = document.querySelectorAll('.right');
+      
+for(let i=0;i<cardright.length;i++){
+   cardright[i].addEventListener('click',function(){
+      cardright[i]
+      })
+
+}
+
+var cardbottomleft = document.querySelectorAll('.bottomleft');
+      
+for(let i=0;i<cardbottomleft.length;i++){
+   cardbottomleft[i].addEventListener('click',function(){
+      cardbottomleft[i]
+      })
+
+}
+
+var cardbottomright = document.querySelectorAll('.bottomright');
+      
+for(let i=0;i<cardbottomright.length;i++){
+   cardbottomright[i].addEventListener('click',function(){
+      cardbottomright[i]
+      })
+
+}
+
+var cardline = document.querySelectorAll('.line');
+      
+for(let i=0;i<cardline.length;i++){
+   cardline[i].addEventListener('click',function(){
+      cardline[i]
+      })
+
+}
+
+var cardthreeroad = document.querySelectorAll('.threeroad');
+      
+for(let i=0;i<cardthreeroad.length;i++){
+   cardthreeroad[i].addEventListener('click',function(){
+      cardthreeroad[i]
+      })
+
+}
+
+var cardthreeroadleft = document.querySelectorAll('.threeroadleft');
+      
+for(let i=0;i<cardthreeroadleft.length;i++){
+   cardthreeroadleft[i].addEventListener('click',function(){
+      cardthreeroadleft[i]
+      })
+
+}
+
 
     })
 
