@@ -6,6 +6,23 @@
     height: 100vh;
   }
 
+  .background__niv2 {
+    background-image: url('/screens/img/background2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .background__niv3 {
+    background-image: url('/screens/img/background3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+
+
   .background__frame {
 
     position: relative;
@@ -39,6 +56,16 @@
     border: 3px solid black;
   }
 
+  .background__avatar{
+    position: absolute;
+    background-image: url('/screens/img/avatar.png');
+    width: 164px;
+    height: 164px;
+    left: 1187px;
+    top: 249px;
+    z-index: 2;
+  }
+
  .name {
    position: relative;
    width: 42px;
@@ -49,6 +76,7 @@
 
  .gameplay__heart {
    background-image: url('/screens/img/heart.png');
+   z-index: 2;
    position: absolute;
    width: 32px;
    height: 30px;
@@ -59,6 +87,7 @@
 
  .gameplay__heart2 {
   background-image: url('/screens/img/heart.png');
+  z-index: 2;
   position: absolute;
   width: 32px;
   height: 30px;
@@ -68,12 +97,41 @@
 
  .gameplay__heart3 {
   background-image: url('/screens/img/heart.png');
+  z-index: 2;
   position: absolute;
   width: 32px;
   height: 30px;
   left: 1300px;
   top: 475px;
  }
+
+ .gameplay__heart4 {
+  background-image: url('/screens/img/breakheart.png');
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  left: 1250px;
+  top: 475px;
+
+}
+
+.gameplay__heart5 {
+ background-image: url('/screens/img/breakheart.png');
+ position: absolute;
+ width: 32px;
+ height: 30px;
+ left: 1200px;
+ top: 475px;
+}
+
+.gameplay__heart6 {
+ background-image: url('/screens/img/breakheart.png');
+ position: absolute;
+ width: 32px;
+ height: 30px;
+ left: 1300px;
+ top: 475px;
+}
 
  .son{
    background-image: url('/screens/img/son.png');
@@ -113,76 +171,242 @@
   top: 676px;
  }
 
- @mixin place__card($left:0, $top: 0) {
+
+ .card__foret {
   background-image: url('/screens/img/Carte.png');
+ }
+
+ .card__bottom__right__foret {
+  background-image: url('/screens/img/Carte_dir_bas_droite_foret.png');
+ }
+
+ .card__bottom__left__foret {
+  background-image: url('/screens/img/carte_dir_bas_gauche_foret.png');
+ }
+
+ .card__right__foret {
+  background-image: url('/screens/img/Carte_Dir_Droite_foret.png');
+ }
+
+ .card__left__foret {
+  background-image: url('/screens/img/Carte_Dir_Gauche_foret.png');
+}
+
+.card__line__foret {
+  background-image: url('/screens/img/Carte_ligne_foret.png');
+}
+
+.card__threeroad__foret {
+  background-image: url('/screens/img/chemin_triple_foret.png');
+}
+
+.card__threeroadLeft__foret {
+  background-image: url('/screens/img/chemin-triple-penché_foret.png');
+}
+
+.card__trap {
+  background-image: url('/screens/img/CARTE_PIEGE.png');
+}
+
+
+.card__city {
+  background-image: url('/screens/img/Carte_ville.png');
+}
+
+.card__bottom__right__city {
+  background-image: url('/screens/img/Carte_dir_bas_droite_City.png');
+ }
+
+ .card__bottom__left__city {
+  background-image: url('/screens/img/Carte_dir_bas_gauche_City.png');
+ }
+
+ .card__right__city {
+  background-image: url('/screens/img/Carte_Dir_Droite_City.png');
+ }
+
+ .card__left__city {
+  background-image: url('/screens/img/Carte_Dir_Gauche_City.png');
+}
+
+.card__line__city {
+  background-image: url('/screens/img/Carte_ligne_City.png');
+}
+
+.card__threeroad__city {
+  background-image: url('/screens/img/chemin_triple_City.png');
+}
+
+.card__threeroadLeft__city{
+  background-image: url('/screens/img/chemin-triple-penché_City.png');
+}
+
+.card__castle {
+  background-image: url('/screens/img/Carte_chateau.png');
+}
+
+ .card__bottom__right__castle {
+  background-image: url('/screens/img/Carte_dir_bas_droite_Castle.png');
+ }
+
+ .card__bottom__left__castle {
+  background-image: url('/screens/img/carte_dir_bas_gauche_Castle.png');
+ }
+
+ .card__right__castle {
+  background-image: url('/screens/img/Carte_Dir_Droite_Castle.png');
+ }
+
+ .card__left__castle {
+  background-image: url('/screens/img/Carte_Dir_Gauche_Castle.png');
+}
+
+.card__line__castle {
+  background-image: url('/screens/img/Carte_ligne_Castle.png');
+}
+
+.card__threeroad__castle {
+  background-image: url('/screens/img/chemin-triple_Castle.png');
+}
+
+.card__threeroadLeft__castle {
+  background-image: url('/screens/img/chemin-triple-penché_Castle.png');
+}
+
+ @mixin place__card($left:0, $top: 0, $z-index: 0) {
   position: absolute;
   width: 100px;
   height: 136px;
   left: $left;
   top: $top;
+  z-index: $z-index;
 
  }
 
- .gameplay__card0 {
-   @include place__card($top: 79px, $left: 134px)
+ .gameplay__card__back0 {
+   @include place__card($top: 79px, $left: 134px, $z-index: 2)
  }
- .gameplay__card1 {
-  @include place__card($top: 79px, $left: 338px)
+ .gameplay__card__back1 {
+  @include place__card($top: 79px, $left: 338px, $z-index: 2)
 
  }
- .gameplay__card2 {
-  @include place__card($top: 79px, $left: 542px)
+ .gameplay__card__back2 {
+  @include place__card($top: 79px, $left: 542px, $z-index: 2)
 
  }
- .gameplay__card3 {
-  @include place__card($top: 79px, $left: 746px)
+ .gameplay__card__back3 {
+  @include place__card($top: 79px, $left: 746px, $z-index: 2)
 
  }
- .gameplay__card4 {
-  @include place__card($top: 231px, $left: 134px)
+ .gameplay__card__back4 {
+  @include place__card($top: 231px, $left: 134px, $z-index: 2)
 
  }
- .gameplay__card5 {
-  @include place__card($top: 231px, $left: 338px)
+ .gameplay__card__back5 {
+  @include place__card($top: 231px, $left: 338px, $z-index: 2)
 
  }
- .gameplay__card6 {
-  @include place__card($top: 231px, $left: 542px)
+ .gameplay__card__back6 {
+  @include place__card($top: 231px, $left: 542px, $z-index: 2)
 
  }
- .gameplay__card7 {
-  @include place__card($top: 231px, $left: 746px)
+ .gameplay__card__back7 {
+  @include place__card($top: 231px, $left: 746px, $z-index:2)
 
  }
- .gameplay__card8 {
-  @include place__card($top: 383px, $left: 134px)
+ .gameplay__card__back8 {
+  @include place__card($top: 383px, $left: 134px, $z-index: 2)
 
  }
- .gameplay__card9 {
-  @include place__card($top: 383px, $left: 338px)
+ .gameplay__card__back9 {
+  @include place__card($top: 383px, $left: 338px, $z-index: 2)
 
  }
- .gameplay__card10 {
-  @include place__card($top: 383px, $left: 542px)
+ .gameplay__card__back10 {
+  @include place__card($top: 383px, $left: 542px, $z-index: 2)
 
  }
- .gameplay__card11 {
-  @include place__card($top: 383px, $left: 746px)
+ .gameplay__card__back11 {
+  @include place__card($top: 383px, $left: 746px, $z-index: 2)
 
  }
- .gameplay__card12 {
-  @include place__card($top: 535px, $left: 134px)
+ .gameplay__card__back12 {
+  @include place__card($top: 535px, $left: 134px, $z-index: 2)
 
  }
- .gameplay__card13 {
-  @include place__card($top: 535px, $left: 338px)
+ .gameplay__card__back13 {
+  @include place__card($top: 535px, $left: 338px, $z-index: 2)
 
  }
- .gameplay__card14 {
-  @include place__card($top: 535px, $left: 542px)
+ .gameplay__card__back14 {
+  @include place__card($top: 535px, $left: 542px, $z-index: 2)
 
  }
- .gameplay__card15 {
-  @include place__card($top: 535px, $left: 746px)
+ .gameplay__card__back15 {
+  @include place__card($top: 535px, $left: 746px, $z-index: 2)
 
  }
+
+ .gameplay__card__front0 {
+  @include place__card($top: 79px, $left: 134px)
+}
+.gameplay__card__front1 {
+ @include place__card($top: 79px, $left: 338px)
+
+}
+.gameplay__card__front2 {
+ @include place__card($top: 79px, $left: 542px)
+
+}
+.gameplay__card__front3 {
+ @include place__card($top: 79px, $left: 746px)
+
+}
+.gameplay__card__front4 {
+ @include place__card($top: 231px, $left: 134px)
+
+}
+.gameplay__card__front5 {
+ @include place__card($top: 231px, $left: 338px)
+
+}
+.gameplay__card__front6 {
+ @include place__card($top: 231px, $left: 542px)
+
+}
+.gameplay__card__front7 {
+ @include place__card($top: 231px, $left: 746px)
+
+}
+.gameplay__card__front8 {
+ @include place__card($top: 383px, $left: 134px)
+
+}
+.gameplay__card__front9 {
+ @include place__card($top: 383px, $left: 338px)
+
+}
+.gameplay__card__front10 {
+ @include place__card($top: 383px, $left: 542px)
+
+}
+.gameplay__card__front11 {
+ @include place__card($top: 383px, $left: 746px)
+
+}
+.gameplay__card__front12 {
+ @include place__card($top: 535px, $left: 134px)
+
+}
+.gameplay__card__front13 {
+ @include place__card($top: 535px, $left: 338px)
+
+}
+.gameplay__card__front14 {
+ @include place__card($top: 535px, $left: 542px)
+
+}
+.gameplay__card__front15 {
+ @include place__card($top: 535px, $left: 746px)
+
+}
