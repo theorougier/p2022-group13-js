@@ -14,6 +14,18 @@ const loadInstruction = function() {
 
 const loadGame = function() {
      document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
+       var life = 0;
+
+   var cardtrap=document.querySelectorAll('.trap');
+   for(let j=0;j<cardtrap.length;j++){
+      cardtrap[j].addEventListener('click', function() {
+         life++;
+         document.querySelector(".gameplay__heart"+life).classList.add("hidden");
+         //console.log(i, document.querySelector(".gameplay__heart"+i));
+         // (".gameplay__heart"+i)
+         //console.log("rrr")
+     })
+   }
       card.addEventListener('click', function() {
          if (card.classList.contains('selectable')) {
             card.remove();
@@ -98,3 +110,4 @@ const loadGame = function() {
     pause.classList.toggle("hidden");
     pause2.classList.toggle("hidden");
   });
+
