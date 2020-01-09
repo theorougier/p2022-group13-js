@@ -80,7 +80,6 @@ const loadGame = function() {
       target.classList.add('selectable');
    }
  }
-}
   const btn3 = document.querySelector(".return");
   btn3.addEventListener("click", function() {
     oxo.screens.loadScreen("home", loadReturn);
