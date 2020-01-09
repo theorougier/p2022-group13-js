@@ -9,7 +9,7 @@ oxo.screens.loadScreen("home", function() {
 const loadInstruction = function() {
   const btn2 = document.querySelector(".instruction__button");
   btn2.addEventListener("click", function() {
-    oxo.screens.loadScreen("game", loadGame);
+    oxo.screens.loadScreen("game3", loadGame);
     
    
   });
