@@ -87,7 +87,7 @@ const loadGame = function() {
          }
       })
    })
- };
+ }
  function line(row, column) {
    preselect(row - 1, column);
  }
