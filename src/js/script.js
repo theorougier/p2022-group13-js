@@ -28,8 +28,31 @@ const loadInstruction = function() {
 
 const loadGame = function() {
 
-  let soundGame = document.getElementById("soundGame"); 
-  soundGame.play();
+
+
+
+  let gameMusic= document.getElementById("gameMusic"); 
+  gameMusic.play();
+
+
+
+  const btn9 = document.querySelector(".son");
+
+  btn9.addEventListener("click", function() {
+    let gameMusicstop= document.getElementById("gameMusic"); 
+    gameMusicstop.pause();
+    gameMusicstop.currentTime = 0;
+
+    game2Music.pause();
+    game2Music.currentTime = 0;
+
+    game3Music.pause();
+    game3Music.currentTime = 0;
+
+  });
+
+
+
 
    const btn3 = document.querySelector(".return");
    btn3.addEventListener("click", function() {
@@ -52,6 +75,8 @@ const loadGame = function() {
     pause.classList.toggle("hidden");
     pause2.classList.toggle("hidden");
   });
+
+  
 
 
      document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
@@ -133,10 +158,10 @@ const loadGame = function() {
    trapMusic.play();
    if (life === 3){
 
+
       oxo.screens.loadScreen("gameover")
       
 
-      oxo.screens.loadScreen("gameover");
 
  }
  }
