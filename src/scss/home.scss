@@ -1,22 +1,29 @@
 .Menu {
-  display: flex;
-  justify-content: center;
   background-image: url("/screens/img/Menu.png");
-  background-clip: border-box;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
+  width: 1366px;
+  height: 750px;
+  margin-left: 80px;
 }
 
 .Menu__play {
-  position: relative;
+  position: absolute;
   background-image: url("/screens/img/Play.png");
-  background-repeat: no-repeat;
   width: 255px;
   height: 65px;
-  top: 650px;
-  left: 20px;
+  top: 500px;
+  left: 625px;
+  border-radius: 10px;
+  
+  
+}
+
+.Menu__credit {
+  position: absolute;
+  background-image: url("/screens/img/credit_menu.png");
+  width: 255px;
+  height: 65px;
+  top: 600px;
+  left: 625px;
   border-radius: 10px;
   
   
