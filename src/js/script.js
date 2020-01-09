@@ -1,5 +1,6 @@
 
 let life = 0;
+let lvl = 0;
 
 oxo.screens.loadScreen("home", function() {
  
@@ -123,9 +124,32 @@ const loadGame = function() {
    document.querySelector(".gameplay__heart"+life).classList.add("hidden");
 
    if (life === 3){
-      oxo.screens.loadScreen("gameover")
-      console.log("lol")
+      oxo.screens.loadScreen("gameover");
  }
-}
+ }
+
+if(lvl === 0){
+   level1()
 }
  
+
+}
+const level1 = ()=> {
+    lvl = 1;
+   const EndNiv = document.querySelector(".endgame");
+
+   EndNiv.addEventListener('click', function(){
+     oxo.screens.loadScreen("game2",level2)
+   
+   })
+}
+
+const level2 = () => {
+   loadGame();
+   const EndNiv2 = document.querySelector(".endgame1")
+   EndNiv2.addEventListener('click', function(){
+     oxo.screens.loadScreen("game3", loadGame)
+   })
+}
+
+
