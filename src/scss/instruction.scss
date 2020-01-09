@@ -1,0 +1,77 @@
+.instruction__background {
+  display: flex;
+  justify-content: center;
+  background-image: url("/screens/img/introductions.png");
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.instruction__lines {
+  position: absolute;
+  background-image: url("/screens/img/instructions-ligne.png");
+  width: 433px;
+  height: 351px;
+  top: 350px;
+  left: 922px;
+}
+
+.son {
+  background-image: url("/screens/img/son.png");
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 1160px;
+
+  border-radius: 100px;
+}
+
+.help {
+  background-image: url("/screens/img/aide.png");
+  position: absolute;
+  border-radius: 100px;
+  width: 42px;
+  height: 42px;
+  left: 1218px;
+  top: 676px;
+}
+
+.pause {
+  background-image: url("/screens/img/pause.png");
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  left: 1275px;
+  top: 676px;
+}
+
+.return {
+  background-image: url("/screens/img/home.png");
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  left: 1330px;
+  top: 676px;
+}
+.instruction__button {
+  position: absolute;
+  background-image: url("/screens/img/jaicompris-explications.png");
+  width: 255px;
+  height: 67px;
+  top: 670px;
+  left: 646px;
+  border-radius: 10px;
+}
+
+.instruction__cursor{
+  position: absolute;
+  background-image: url("/screens/img/clic.png");
+  width: 253px;
+  height: 159.97px;
+  top: 300px;
+  left: 246px;
+}

@@ -1,10 +1,23 @@
+oxo.screens.loadScreen("home", function() {
+  const btn = document.querySelector(".Menu__play");
+  btn.addEventListener("click", function() {
+    oxo.screens.loadScreen("instructions", loadInstruction);
+  });
 
-oxo.screens.loadScreen('home', function() {
-const btn = document.querySelector('.Menu__play')
- btn.addEventListener("click", function(){
-    oxo.screens.loadScreen('game2', function(){
+});
 
-      var card = document.querySelectorAll('.card__city');
+const loadInstruction = function() {
+  const btn2 = document.querySelector(".instruction__button");
+  btn2.addEventListener("click", function() {
+    oxo.screens.loadScreen("game", loadGame);
+    
+   
+  });
+};
+
+const loadGame = function() {
+   
+  var card = document.querySelectorAll('.card__city');
       
 for(let i=0;i<card.length;i++){
    card[i].addEventListener('click',function(){
@@ -99,11 +112,4 @@ for(let i=0;i<cardthreeroadleft.length;i++){
       })
 
 }
-
-
-    })
-
-
- })
-});
-
+ };
