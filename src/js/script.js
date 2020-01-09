@@ -1,18 +1,33 @@
+
+
+
 oxo.screens.loadScreen("home", function() {
+ 
   const btn = document.querySelector(".Menu__play");
   btn.addEventListener("click", function() {
     oxo.screens.loadScreen("instructions", loadInstruction);
   });
+
+
+  
+  let homeMusic = document.getElementById("homeMusic"); 
+  homeMusic.play();
+
+  
 });
 
 const loadInstruction = function() {
   const btn2 = document.querySelector(".instruction__button");
   btn2.addEventListener("click", function() {
-    oxo.screens.loadScreen("game2", loadGame);
+    oxo.screens.loadScreen("game", loadGame);
   });  
+  let homeMusic = document.getElementById("homeMusic"); 
+  homeMusic.play();
 };
 
 const loadGame = function() {
+  let game1Music = document.getElementById("audioPlayer"); 
+  game1Music.play();
   var card = document.querySelectorAll(".card__city");
 
   for (let i = 0; i < card.length; i++) {
@@ -115,3 +130,11 @@ const loadGame = function() {
     pause2.classList.toggle("hidden");
   });
 };
+
+
+
+
+
+
+
+
