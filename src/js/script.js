@@ -1,8 +1,19 @@
+
+
+
 oxo.screens.loadScreen("home", function() {
+ 
   const btn = document.querySelector(".Menu__play");
   btn.addEventListener("click", function() {
     oxo.screens.loadScreen("instructions", loadInstruction);
   });
+
+
+  
+  let homeMusic = document.getElementById("homeMusic"); 
+  homeMusic.play();
+
+  
 });
 
 const loadInstruction = function() {
@@ -10,9 +21,12 @@ const loadInstruction = function() {
   btn2.addEventListener("click", function() {
     oxo.screens.loadScreen("game", loadGame);
   });  
+  let homeMusic = document.getElementById("homeMusic"); 
+  homeMusic.play();
 };
 
 const loadGame = function() {
+
      document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
        var life = 0;
 
@@ -92,6 +106,7 @@ const loadGame = function() {
       target.classList.add('selectable');
    }
  }
+
   const btn3 = document.querySelector(".return");
   btn3.addEventListener("click", function() {
     oxo.screens.loadScreen("home", loadReturn);
@@ -110,4 +125,5 @@ const loadGame = function() {
     pause.classList.toggle("hidden");
     pause2.classList.toggle("hidden");
   });
+};
 
