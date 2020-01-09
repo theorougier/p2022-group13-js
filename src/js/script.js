@@ -9,20 +9,13 @@ oxo.screens.loadScreen("home", function() {
     oxo.screens.loadScreen("instructions", loadInstruction);
   });
 
-  const btn7 = document.querySelector(".Menu__credit");
-  btn7.addEventListener("click", function() {
-    oxo.screens.loadScreen("Credits", loadcredit);
-  });
 
-  const loadcredit = function() {
   
-  }
   let homeMusic = document.getElementById("homeMusic"); 
   homeMusic.play();
 
   
 });
-
 
 const loadInstruction = function() {
   const btn2 = document.querySelector(".instruction__button");
@@ -35,37 +28,10 @@ const loadInstruction = function() {
 
 const loadGame = function() {
 
-
-  let gameMusic= document.getElementById("gameMusic"); 
-  gameMusic.play();
-
-
-
-  const btn9 = document.querySelector(".son");
-
-  btn9.addEventListener("click", function() {
-    let gameMusicstop= document.getElementById("gameMusic"); 
-    gameMusicstop.pause();
-    gameMusicstop.currentTime = 0;
-
-    game2Music.pause();
-    game2Music.currentTime = 0;
-
-    game3Music.pause();
-    game3Music.currentTime = 0;
-
-  });
-
-
-
    const btn3 = document.querySelector(".return");
    btn3.addEventListener("click", function() {
      oxo.screens.loadScreen("home", loadReturn);
    });
-   const loadReturn = function() {
-
-   }
-
 
    let pause2 = document.querySelector(".depause");
   let pause = document.querySelector(".niv");
@@ -79,8 +45,6 @@ const loadGame = function() {
     pause.classList.toggle("hidden");
     pause2.classList.toggle("hidden");
   });
-
-  
 
 
      document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
@@ -160,18 +124,13 @@ const loadGame = function() {
    document.querySelector(".gameplay__heart"+life).classList.add("hidden");
 
    if (life === 3){
-
-
-
       oxo.screens.loadScreen("gameover");
-
  }
  }
 
 if(lvl === 0){
    level1()
 }
- 
 
 }
 const level1 = ()=> {
@@ -191,5 +150,6 @@ const level2 = () => {
      oxo.screens.loadScreen("game3", loadGame)
    })
 }
+
 
 
