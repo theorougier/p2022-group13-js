@@ -27,6 +27,9 @@ const loadInstruction = function() {
 
 const loadGame = function() {
 
+  let soundGame = document.getElementById("soundGame"); 
+  soundGame.play();
+
    const btn3 = document.querySelector(".return");
    btn3.addEventListener("click", function() {
      oxo.screens.loadScreen("home", loadReturn);
@@ -125,10 +128,11 @@ const loadGame = function() {
  function trap() {
    life++;
    document.querySelector(".gameplay__heart"+life).classList.add("hidden");
-
+   let trapMusic = document.getElementById("trapMusic"); 
+   trapMusic.play();
    if (life === 3){
       oxo.screens.loadScreen("gameover")
-      console.log("lol")
+      
  }
 }
 }
