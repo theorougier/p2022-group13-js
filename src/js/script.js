@@ -175,9 +175,6 @@ const loadGame = function() {
 
 if(lvl === 0){
    level1()
-   if (lvl === 80){
-      level2()
-   }
 }
 
 }
@@ -192,19 +189,10 @@ const level1 = ()=> {
 }
 
 const level2 = () => {
-   lvl = 81
    loadGame();
    const EndNiv2 = document.querySelector(".endgame1")
    EndNiv2.addEventListener('click', function(){
-     oxo.screens.loadScreen("game3", level3)
-   })
-}
-
-const level3 = () => {
-   loadGame();
-   const EndNiv3 = document.querySelector(".endgame2")
-   EndNiv3.addEventListener('click', function(){
-     oxo.screens.loadScreen("end", loadGame)
+     oxo.screens.loadScreen("game3", loadGame)
    })
 }
 
