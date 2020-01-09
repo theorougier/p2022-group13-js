@@ -1,525 +1,512 @@
+.niv {
+  position: absolute;
+  background-color: white;
+  background-repeat: no-repeat;
+  width: 1366px;
+  height: 750px;
+  margin-left: 80px;
+  z-index: 900;
+  opacity: 0.2;
+}
+
+.depause {
+  position: absolute;
+  background-image: url("/screens/img/boutton-pause.png");
+  background-repeat: no-repeat;
+  width: 228px;
+  height: 228px;
+  left: 700px;
+  z-index: 1000;
+  top: 300px;
+  border-radius: 100%;
+}
+
 // fond des niveaux
 
 .background__niv1 {
-    background-image: url('/screens/img/background1.png');
-    background-repeat: no-repeat;
-    width: 1366px;
-    height: 750px;
-    margin-left: 80px;
-  }
+  background-image: url("/screens/img/background1.png");
+  background-repeat: no-repeat;
+  width: 1366px;
+  height: 750px;
+  margin-left: 80px;
+}
 
-  .background__niv2 {
-    background-image: url('/screens/img/background2.png');
-    background-repeat: no-repeat;
-    width: 1366px;
-    height: 750px;
-    margin-left: 80px;
-  }
+.background__niv2 {
+  background-image: url("/screens/img/background2.png");
+  background-repeat: no-repeat;
+  width: 1366px;
+  height: 750px;
+  margin-left: 80px;
+}
 
-  .background__niv3 {
-    background-image: url('/screens/img/background3.png');
-    background-repeat: no-repeat;
-    width: 1366px;
-    height: 750px;
-    margin-left: 80px;
-  }
+.background__niv3 {
+  background-image: url("/screens/img/background3.png");
+  background-repeat: no-repeat;
+  width: 1366px;
+  height: 750px;
+  margin-left: 80px;
+}
 
-  //Mise en place
-  .background__title {
-    position: relative;
-    background-image: url('/screens/img/title.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    position: absolute;
-    width: 316px;
-    height: 40px;
-    left: 1110px;
-    top: 72px;
-  }
+//Mise en place
+.background__title {
+  position: relative;
+  background-image: url("/screens/img/title.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  width: 316px;
+  height: 40px;
+  left: 1110px;
+  top: 72px;
+}
 
-  .background__frame {
-    background-image: url('/screens/img/Cadre.png');
-    position: absolute;
-    width: 371px;
-    height: 264px;
-    left: 1070px;
-    top: 199px;
-    z-index: 2;
-  }
+.background__frame {
+  background-image: url("/screens/img/Cadre.png");
+  position: absolute;
+  width: 371px;
+  height: 264px;
+  left: 1070px;
+  top: 199px;
+  z-index: 2;
+}
 
-  .background__profile {
-    position: absolute;
-    width: 162px;
-    height: 163px;
-    left: 1185px;
-    top: 246px;
-    border: 3px solid black;
-  }
+.background__profile {
+  position: absolute;
+  width: 162px;
+  height: 163px;
+  left: 1185px;
+  top: 246px;
+  border: 3px solid black;
+}
 
-  .background__avatar{
-    position: absolute;
-    background-image: url('/screens/img/avatar.png');
-    width: 164px;
-    height: 164px;
-    left: 1187px;
-    top: 249px;
-    z-index: 2;
-  }
+.background__avatar {
+  position: absolute;
+  background-image: url("/screens/img/avatar.png");
+  width: 164px;
+  height: 164px;
+  left: 1187px;
+  top: 249px;
+  z-index: 2;
+}
 
- .name {
-   position: relative;
-   width: 42px;
-   height: 22px;
-   left: 1165px;
-   top: 429px;
- }
+.name {
+  position: relative;
+  width: 42px;
+  height: 22px;
+  left: 1165px;
+  top: 429px;
+}
 
- .gameplay__dialogue {
-   position: absolute;
-   left: 80px;
-   top: 0px;
-   width: 1366px;
-   height: 750px;
-   z-index: 3;
- }
-
+.gameplay__dialogue {
+  position: absolute;
+  left: 80px;
+  top: 0px;
+  width: 1366px;
+  height: 750px;
+  z-index: 3;
+}
 
 // Hidden pour dialogue ou autre...
- .hidden {
-   visibility: hidden;
- }
+.hidden {
+  visibility: hidden;
+}
 
+//Dialogue Niveau 1
+.niveau_1_flashback_Arbre {
+  background-image: url("/screens/img/Niveau_1_Flashback_Arbre.png");
+}
+.niveau_1_flashback_Hero {
+  background-image: url("/screens/img/Niveau_1_Flashback_Hero.png");
+}
 
- //Dialogue Niveau 1
- .niveau_1_flashback_Arbre {
-  background-image: url('/screens/img/Niveau_1_Flashback_Arbre.png');
- }
- .niveau_1_flashback_Hero {
-  background-image: url('/screens/img/Niveau_1_Flashback_Hero.png');
- }
+.niveau_1_flashback_Hero2 {
+  background-image: url("/screens/img/Niveau_1_Flashback_Hero_2.png");
+}
 
- .niveau_1_flashback_Hero2 {
-  background-image: url('/screens/img/Niveau_1_Flashback_Hero_2.png');
- }
+.niveau_1_flashback_Sanglier {
+  background-image: url("/screens/img/Niveau_1_Flashback_Sanglier.png");
+}
 
- .niveau_1_flashback_Sanglier {
-  background-image: url('/screens/img/Niveau_1_Flashback_Sanglier.png');
- }
+.niveau_1_flashback_Sanglier2 {
+  background-image: url("/screens/img/Niveau_1_Flashback_Sanglier_2.png");
+}
 
- .niveau_1_flashback_Sanglier2 {
-  background-image: url('/screens/img/Niveau_1_Flashback_Sanglier_2.png');
- }
+.niveau_1_flashback_Sanglier3 {
+  background-image: url("/screens/img/Niveau_1_Flashback_Sanglier_3.png");
+}
 
- .niveau_1_flashback_Sanglier3 {
-  background-image: url('/screens/img/Niveau_1_Flashback_Sanglier_3.png');
- }
+.niveau_1_flashback_Sanglier4 {
+  background-image: url("/screens/img/Niveau_1_Flashback_Sanglier_4.png");
+}
 
- .niveau_1_flashback_Sanglier4 {
-  background-image: url('/screens/img/Niveau_1_Flashback_Sanglier_4.png');
- }
+//Dialogue Niveau 2
+.niveau_2_flashback_Hero {
+  background-image: url("/screens/img/Niveau_2_Flashback_Hero.png");
+}
 
+.niveau_2_flashback_Hero_2 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Hero_2.png");
+}
 
- //Dialogue Niveau 2
- .niveau_2_flashback_Hero {
-  background-image: url('/screens/img/Niveau_2_Flashback_Hero.png');
- }
+.niveau_2_flashback_Hero_3 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Hero_3.png");
+}
 
- .niveau_2_flashback_Hero_2 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Hero_2.png');
- }
+.niveau_2_flashback_Hero_4 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Hero_4.png");
+}
 
- .niveau_2_flashback_Hero_3 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Hero_3.png');
- }
+.niveau_2_flashback_Hero_5 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Hero_5.png");
+}
 
- .niveau_2_flashback_Hero_4 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Hero_4.png');
- }
+.niveau_2_flashback_Fantôme1 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Fantôme_1.png");
+}
 
- .niveau_2_flashback_Hero_5 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Hero_5.png');
- }
+.niveau_2_flashback_Fantôme2 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Fantôme_2.png");
+}
 
+.niveau_2_flashback_Fantôme3 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Fantôme_3.png");
+}
 
- .niveau_2_flashback_Fantôme1 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Fantôme_1.png');
- }
+.niveau_2_flashback_Fantôme4 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Fantôme_4.png");
+}
 
- .niveau_2_flashback_Fantôme2 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Fantôme_2.png');
- }
+.niveau_2_flashback_Fantôme5 {
+  background-image: url("/screens/img/Niveau_2_Flashback_Fantôme_5.png");
+}
 
- .niveau_2_flashback_Fantôme3 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Fantôme_3.png');
- }
+//Dialogue Niveau 3
+.niveau_3_flashback_Hero {
+  background-image: url("/screens/img/Niveau_3_Flashback_Hero.png");
+}
 
- .niveau_2_flashback_Fantôme4 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Fantôme_4.png');
- }
+.niveau_3_flashback_Hero2 {
+  background-image: url("/screens/img/Niveau_3_Flashback_Hero_2.png");
+}
 
- .niveau_2_flashback_Fantôme5 {
-  background-image: url('/screens/img/Niveau_2_Flashback_Fantôme_5.png');
- }
+.Niveau_3_Flashback_Squelette_1 {
+  background-image: url("/screens/img/Niveau_3_Flashback_Squelette_1.png");
+}
 
- //Dialogue Niveau 3
- .niveau_3_flashback_Hero {
-  background-image: url('/screens/img/Niveau_3_Flashback_Hero.png');
- }
+.Niveau_3_Flashback_Squelette_2 {
+  background-image: url("/screens/img/Niveau_3_Flashback_Squelette_2.png");
+}
 
- .niveau_3_flashback_Hero2 {
-  background-image: url('/screens/img/Niveau_3_Flashback_Hero_2.png');
- }
+//Coeur
+.gameplay__heart {
+  background-image: url("/screens/img/heart.png");
+  z-index: 2;
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  left: 1250px;
+  top: 475px;
+}
 
- .Niveau_3_Flashback_Squelette_1 {
-  background-image: url('/screens/img/Niveau_3_Flashback_Squelette_1.png');
- }
-
- .Niveau_3_Flashback_Squelette_2 {
-  background-image: url('/screens/img/Niveau_3_Flashback_Squelette_2.png');
- }
-
- //Coeur
- .gameplay__heart {
-   background-image: url('/screens/img/heart.png');
-   z-index: 2;
-   position: absolute;
-   width: 32px;
-   height: 30px;
-   left: 1250px;
-   top: 475px;
-
- }
-
- .gameplay__heart2 {
-  background-image: url('/screens/img/heart.png');
+.gameplay__heart2 {
+  background-image: url("/screens/img/heart.png");
   z-index: 2;
   position: absolute;
   width: 32px;
   height: 30px;
   left: 1200px;
   top: 475px;
- }
+}
 
- .gameplay__heart3 {
-  background-image: url('/screens/img/heart.png');
+.gameplay__heart3 {
+  background-image: url("/screens/img/heart.png");
   z-index: 2;
   position: absolute;
   width: 32px;
   height: 30px;
   left: 1300px;
   top: 475px;
- }
+}
 
- .gameplay__heart4 {
-  background-image: url('/screens/img/breakheart.png');
+.gameplay__heart4 {
+  background-image: url("/screens/img/breakheart.png");
   position: absolute;
   width: 32px;
   height: 30px;
   left: 1250px;
   top: 475px;
-
 }
 
 .gameplay__heart5 {
- background-image: url('/screens/img/breakheart.png');
- position: absolute;
- width: 32px;
- height: 30px;
- left: 1200px;
- top: 475px;
+  background-image: url("/screens/img/breakheart.png");
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  left: 1200px;
+  top: 475px;
 }
 
 .gameplay__heart6 {
- background-image: url('/screens/img/breakheart.png');
- position: absolute;
- width: 32px;
- height: 30px;
- left: 1300px;
- top: 475px;
+  background-image: url("/screens/img/breakheart.png");
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  left: 1300px;
+  top: 475px;
 }
 
 //Boutton
- .son{
-   background-image: url('/screens/img/son.png');
-   position: absolute;
-   width: 42px;
-   height: 42px;
-   left: 1175px;
-   top: 676px;
- 
- }
+.son {
+  background-image: url("/screens/img/son.png");
+  background-position: center;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 1175px;
+  top: 676px;
+}
 
- .help{
-  background-image: url('/screens/img/aide.png');
+.help {
+  background-image: url("/screens/img/aide.png");
+  background-position: center;
   position: absolute;
   width: 42px;
   height: 42px;
   left: 1225px;
   top: 676px;
- 
- }
+}
 
- .pause{
-  background-image: url('/screens/img/pause.png');
+.pause {
+  background-image: url("/screens/img/pause.png");
+  background-position: center;
   position: absolute;
   width: 42px;
   height: 42px;
   left: 1275px;
   top: 676px;
- }
+}
 
- .return{
-  background-image: url('/screens/img/home.png');
+.return {
+  background-image: url("/screens/img/home.png");
+  background-position: center;
   position: absolute;
   width: 42px;
   height: 42px;
   left: 1325px;
   top: 676px;
- }
+}
 
+//Skin Carte Niveau 1
+.card__foret {
+  background-image: url("/screens/img/Carte.png");
+}
 
- //Skin Carte Niveau 1
- .card__foret {
-  background-image: url('/screens/img/Carte.png');
- }
+.card__bottom__right__foret {
+  background-image: url("/screens/img/Carte_dir_bas_droite_foret.png");
+}
 
- .card__bottom__right__foret {
-  background-image: url('/screens/img/Carte_dir_bas_droite_foret.png');
- }
+.card__bottom__left__foret {
+  background-image: url("/screens/img/carte_dir_bas_gauche_foret.png");
+}
 
- .card__bottom__left__foret {
-  background-image: url('/screens/img/carte_dir_bas_gauche_foret.png');
- }
+.card__right__foret {
+  background-image: url("/screens/img/Carte_Dir_Droite_foret.png");
+}
 
- .card__right__foret {
-  background-image: url('/screens/img/Carte_Dir_Droite_foret.png');
- }
-
- .card__left__foret {
-  background-image: url('/screens/img/Carte_Dir_Gauche_foret.png');
+.card__left__foret {
+  background-image: url("/screens/img/Carte_Dir_Gauche_foret.png");
 }
 
 .card__line__foret {
-  background-image: url('/screens/img/Carte_ligne_foret.png');
+  background-image: url("/screens/img/Carte_ligne_foret.png");
 }
 
 .card__threeroad__foret {
-  background-image: url('/screens/img/chemin_triple_foret.png');
+  background-image: url("/screens/img/chemin_triple_foret.png");
 }
 
 .card__threeroadLeft__foret {
-  background-image: url('/screens/img/chemin-triple-penché_foret.png');
+  background-image: url("/screens/img/chemin-triple-penché_foret.png");
 }
 
 .card__trap {
-  background-image: url('/screens/img/CARTE_PIEGE.png');
+  background-image: url("/screens/img/CARTE_PIEGE.png");
 }
 
 //Skin Carte Niveau 2
 
 .card__city {
-  background-image: url('/screens/img/Carte_ville.png');
+  background-image: url("/screens/img/Carte_ville.png");
 }
 
 .card__bottom__right__city {
-  background-image: url('/screens/img/Carte_dir_bas_droite_City.png');
- }
+  background-image: url("/screens/img/Carte_dir_bas_droite_City.png");
+}
 
- .card__bottom__left__city {
-  background-image: url('/screens/img/Carte_dir_bas_gauche_City.png');
- }
+.card__bottom__left__city {
+  background-image: url("/screens/img/Carte_dir_bas_gauche_City.png");
+}
 
- .card__right__city {
-  background-image: url('/screens/img/Carte_Dir_Droite_City.png');
- }
+.card__right__city {
+  background-image: url("/screens/img/Carte_Dir_Droite_City.png");
+}
 
- .card__left__city {
-  background-image: url('/screens/img/Carte_Dir_Gauche_City.png');
+.card__left__city {
+  background-image: url("/screens/img/Carte_Dir_Gauche_City.png");
 }
 
 .card__line__city {
-  background-image: url('/screens/img/Carte_ligne_City.png');
+  background-image: url("/screens/img/Carte_ligne_City.png");
 }
 
 .card__threeroad__city {
-  background-image: url('/screens/img/chemin_triple_City.png');
+  background-image: url("/screens/img/chemin_triple_City.png");
 }
 
-.card__threeroadLeft__city{
-  background-image: url('/screens/img/chemin-triple-penché_City.png');
+.card__threeroadLeft__city {
+  background-image: url("/screens/img/chemin-triple-penché_City.png");
 }
 
 //Skin Carte Niveau 3
 
 .card__castle {
-  background-image: url('/screens/img/Carte_chateau.png');
+  background-image: url("/screens/img/Carte_chateau.png");
 }
 
- .card__bottom__right__castle {
-  background-image: url('/screens/img/Carte_dir_bas_droite_Castle.png');
- }
+.card__bottom__right__castle {
+  background-image: url("/screens/img/Carte_dir_bas_droite_Castle.png");
+}
 
- .card__bottom__left__castle {
-  background-image: url('/screens/img/Carte_dir_bas_gauche_Castle.png');
- }
+.card__bottom__left__castle {
+  background-image: url("/screens/img/Carte_dir_bas_gauche_Castle.png");
+}
 
- .card__right__castle {
-  background-image: url('/screens/img/Carte_Dir_Droite_Castle.png');
- }
+.card__right__castle {
+  background-image: url("/screens/img/Carte_Dir_Droite_Castle.png");
+}
 
- .card__left__castle {
-  background-image: url('/screens/img/Carte_Dir_Gauche_Castle.png');
+.card__left__castle {
+  background-image: url("/screens/img/Carte_Dir_Gauche_Castle.png");
 }
 
 .card__line__castle {
-  background-image: url('/screens/img/Carte_ligne_Castle.png');
+  background-image: url("/screens/img/Carte_ligne_Castle.png");
 }
 
 .card__threeroad__castle {
-  background-image: url('/screens/img/chemin-triple_Castle.png');
+  background-image: url("/screens/img/chemin-triple_Castle.png");
 }
 
 .card__threeroadLeft__castle {
-  background-image: url('/screens/img/chemin-triple-penché_Castle.png');
+  background-image: url("/screens/img/chemin-triple-penché_Castle.png");
 }
 
 // dos de carte
- @mixin place__card($left:0, $top: 0, $z-index: 0) {
+@mixin place__card($left: 0, $top: 0, $z-index: 0) {
   position: absolute;
   width: 100px;
   height: 136px;
   left: $left;
   top: $top;
   z-index: $z-index;
+}
 
- }
+.gameplay__card__back0 {
+  @include place__card($top: 79px, $left: 134px, $z-index: 2);
+}
+.gameplay__card__back1 {
+  @include place__card($top: 79px, $left: 338px, $z-index: 2);
+}
+.gameplay__card__back2 {
+  @include place__card($top: 79px, $left: 542px, $z-index: 2);
+}
+.gameplay__card__back3 {
+  @include place__card($top: 79px, $left: 746px, $z-index: 2);
+}
+.gameplay__card__back4 {
+  @include place__card($top: 231px, $left: 134px, $z-index: 2);
+}
+.gameplay__card__back5 {
+  @include place__card($top: 231px, $left: 338px, $z-index: 2);
+}
+.gameplay__card__back6 {
+  @include place__card($top: 231px, $left: 542px, $z-index: 2);
+}
+.gameplay__card__back7 {
+  @include place__card($top: 231px, $left: 746px, $z-index: 2);
+}
+.gameplay__card__back8 {
+  @include place__card($top: 383px, $left: 134px, $z-index: 2);
+}
+.gameplay__card__back9 {
+  @include place__card($top: 383px, $left: 338px, $z-index: 2);
+}
+.gameplay__card__back10 {
+  @include place__card($top: 383px, $left: 542px, $z-index: 2);
+}
+.gameplay__card__back11 {
+  @include place__card($top: 383px, $left: 746px, $z-index: 2);
+}
+.gameplay__card__back12 {
+  @include place__card($top: 535px, $left: 134px, $z-index: 2);
+}
+.gameplay__card__back13 {
+  @include place__card($top: 535px, $left: 338px, $z-index: 2);
+}
+.gameplay__card__back14 {
+  @include place__card($top: 535px, $left: 542px, $z-index: 2);
+}
+.gameplay__card__back15 {
+  @include place__card($top: 535px, $left: 746px, $z-index: 2);
+}
 
- .gameplay__card__back0 {
-   @include place__card($top: 79px, $left: 134px, $z-index: 2)
- }
- .gameplay__card__back1 {
-  @include place__card($top: 79px, $left: 338px, $z-index: 2)
+// face de carte
 
- }
- .gameplay__card__back2 {
-  @include place__card($top: 79px, $left: 542px, $z-index: 2)
-
- }
- .gameplay__card__back3 {
-  @include place__card($top: 79px, $left: 746px, $z-index: 2)
-
- }
- .gameplay__card__back4 {
-  @include place__card($top: 231px, $left: 134px, $z-index: 2)
-
- }
- .gameplay__card__back5 {
-  @include place__card($top: 231px, $left: 338px, $z-index: 2)
-
- }
- .gameplay__card__back6 {
-  @include place__card($top: 231px, $left: 542px, $z-index: 2)
-
- }
- .gameplay__card__back7 {
-  @include place__card($top: 231px, $left: 746px, $z-index:2)
-
- }
- .gameplay__card__back8 {
-  @include place__card($top: 383px, $left: 134px, $z-index: 2)
-
- }
- .gameplay__card__back9 {
-  @include place__card($top: 383px, $left: 338px, $z-index: 2)
-
- }
- .gameplay__card__back10 {
-  @include place__card($top: 383px, $left: 542px, $z-index: 2)
-
- }
- .gameplay__card__back11 {
-  @include place__card($top: 383px, $left: 746px, $z-index: 2)
-
- }
- .gameplay__card__back12 {
-  @include place__card($top: 535px, $left: 134px, $z-index: 2)
-
- }
- .gameplay__card__back13 {
-  @include place__card($top: 535px, $left: 338px, $z-index: 2)
-
- }
- .gameplay__card__back14 {
-  @include place__card($top: 535px, $left: 542px, $z-index: 2)
-
- }
- .gameplay__card__back15 {
-  @include place__card($top: 535px, $left: 746px, $z-index: 2)
-
- }
-
- // face de carte
-
- .gameplay__card__front0 {
-  @include place__card($top: 79px, $left: 134px)
+.gameplay__card__front0 {
+  @include place__card($top: 79px, $left: 134px);
 }
 .gameplay__card__front1 {
- @include place__card($top: 79px, $left: 338px)
-
+  @include place__card($top: 79px, $left: 338px);
 }
 .gameplay__card__front2 {
- @include place__card($top: 79px, $left: 542px)
-
+  @include place__card($top: 79px, $left: 542px);
 }
 .gameplay__card__front3 {
- @include place__card($top: 79px, $left: 746px)
-
+  @include place__card($top: 79px, $left: 746px);
 }
 .gameplay__card__front4 {
- @include place__card($top: 231px, $left: 134px)
-
+  @include place__card($top: 231px, $left: 134px);
 }
 .gameplay__card__front5 {
- @include place__card($top: 231px, $left: 338px)
-
+  @include place__card($top: 231px, $left: 338px);
 }
 .gameplay__card__front6 {
- @include place__card($top: 231px, $left: 542px)
-
+  @include place__card($top: 231px, $left: 542px);
 }
 .gameplay__card__front7 {
- @include place__card($top: 231px, $left: 746px)
-
+  @include place__card($top: 231px, $left: 746px);
 }
 .gameplay__card__front8 {
- @include place__card($top: 383px, $left: 134px)
-
+  @include place__card($top: 383px, $left: 134px);
 }
 .gameplay__card__front9 {
- @include place__card($top: 383px, $left: 338px)
-
+  @include place__card($top: 383px, $left: 338px);
 }
 .gameplay__card__front10 {
- @include place__card($top: 383px, $left: 542px)
-
+  @include place__card($top: 383px, $left: 542px);
 }
 .gameplay__card__front11 {
- @include place__card($top: 383px, $left: 746px)
-
+  @include place__card($top: 383px, $left: 746px);
 }
 .gameplay__card__front12 {
- @include place__card($top: 535px, $left: 134px)
-
+  @include place__card($top: 535px, $left: 134px);
 }
 .gameplay__card__front13 {
- @include place__card($top: 535px, $left: 338px)
-
+  @include place__card($top: 535px, $left: 338px);
 }
 .gameplay__card__front14 {
- @include place__card($top: 535px, $left: 542px)
-
+  @include place__card($top: 535px, $left: 542px);
 }
 .gameplay__card__front15 {
- @include place__card($top: 535px, $left: 746px)
-
+  @include place__card($top: 535px, $left: 746px);
 }

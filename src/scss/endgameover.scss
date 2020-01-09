@@ -1,0 +1,21 @@
+.background__over {
+    display: flex;
+    justify-content: center;
+    background-image: url("/screens/img/Niveau_1_GAME_OVER.png");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .restart {
+    position: relative;
+    background-image: url("/screens/img/restart.png");
+    background-repeat: no-repeat;
+    width: 255px;
+    height: 65px;
+    top: 650px;
+    left: 20px;
+    border-radius: 10px;
+  }

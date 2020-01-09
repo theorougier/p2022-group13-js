@@ -1,24 +1,19 @@
-oxo.screens.loadScreen("game3", loadGame);
+oxo.screens.loadScreen("home", function() {
+  const btn = document.querySelector(".Menu__play");
+  btn.addEventListener("click", function() {
+    oxo.screens.loadScreen("instructions", loadInstruction);
+  });
+});
 
-// oxo.screens.loadScreen("home", function() {
-//   const btn = document.querySelector(".Menu__play");
-//   btn.addEventListener("click", function() {
-//     oxo.screens.loadScreen("instructions", loadInstruction);
-//   });
+const loadInstruction = function() {
+  const btn2 = document.querySelector(".instruction__button");
+  btn2.addEventListener("click", function() {
+    oxo.screens.loadScreen("game2", loadGame);
+  });  
+};
 
-// });
-
-// const loadInstruction = function() {
-//   const btn2 = document.querySelector(".instruction__button");
-//   btn2.addEventListener("click", function() {
-//     oxo.screens.loadScreen("game", loadGame);
-    
-   
-//   });
-// };
-
-function loadGame() {
-   document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
+const loadGame = function() {
+     document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
       card.addEventListener('click', function() {
          if (card.classList.contains('selectable')) {
             card.remove();
@@ -54,11 +49,6 @@ function loadGame() {
       })
    })
  };
-   
-
-
- 
-
  function line(row, column) {
    preselect(row - 1, column);
  }
@@ -78,117 +68,35 @@ function loadGame() {
    preselect(row - 1, column);
    preselect(row, column - 1);
    preselect(row, column + 1);
-   
  }
  function threeroadleft(row, column) {
    preselect(row - 1, column);
    preselect(row, column - 1);
    preselect(row, column + 1);
-   
  }
  function preselect(row, column) {
    let target = document.querySelector('[data-row="' + row + '"][data-column="' + column + '"]');
-
    if (target) {
       target.classList.add('selectable');
    }
  }
- 
- 
- 
-//
-      
-// for(let i=0;i<card.length;i++){
-//    card[i].addEventListener('click',function(){
-//       card[i].style.opacity=0;
-//       })
+}
+  const btn3 = document.querySelector(".return");
+  btn3.addEventListener("click", function() {
+    oxo.screens.loadScreen("home", loadReturn);
+  });
 
-// }
-// var card1 = document.querySelectorAll('.card__foret');
-      
-// for(let i=0;i<card1.length;i++){
+  const loadReturn = function() {};
+  let pause2 = document.querySelector(".depause");
+  let pause = document.querySelector(".niv");
+  let boutonpause = document.querySelector(".pause");
+  boutonpause.addEventListener("click", function() {
+    pause.classList.toggle("hidden");
+    pause2.classList.toggle("hidden");
+  });
 
-//    card1[i].addEventListener('click',function(){
-//       card1[i].style.opacity=0;
-
-//       })
-
-// }
-// var card2 = document.querySelectorAll('.card__castle');
-      
-// for(let i=0;i<card2.length;i++){
-//    card2[i].addEventListener('click',function(){
-//       card2[i].style.opacity=0;
-//       })
-
-// }
-// var cardtrap = document.querySelectorAll('.trap');
-      
-// for(let i=0;i<cardtrap.length;i++){
-//    cardtrap[i].addEventListener('click',function(){
-//       cardtrap[i]
-//       })
-
-// }
-// var cardleft = document.querySelectorAll('.left');
-      
-// for(let i=0;i<cardleft.length;i++){
-//    cardleft[i].addEventListener('click',function(){
-//       cardleft[i]
-//       })
-
-// }
-// var cardright = document.querySelectorAll('.right');
-      
-// for(let i=0;i<cardright.length;i++){
-//    cardright[i].addEventListener('click',function(){
-//       cardright[i]
-//       })
-
-// }
-
-// var cardbottomleft = document.querySelectorAll('.bottomleft');
-      
-// for(let i=0;i<cardbottomleft.length;i++){
-//    cardbottomleft[i].addEventListener('click',function(){
-//       cardbottomleft[i]
-//       })
-
-// }
-
-// var cardbottomright = document.querySelectorAll('.bottomright');
-      
-// for(let i=0;i<cardbottomright.length;i++){
-//    cardbottomright[i].addEventListener('click',function(){
-//       cardbottomright[i]
-//       })
-
-// }
-
-// var cardline = document.querySelectorAll('.line');
-      
-// for(let i=0;i<cardline.length;i++){
-//    cardline[i].addEventListener('click',function(){
-//       cardline[i]
-//       })
-
-// }
-
-// var cardthreeroad = document.querySelectorAll('.threeroad');
-      
-// for(let i=0;i<cardthreeroad.length;i++){
-//    cardthreeroad[i].addEventListener('click',function(){
-//       cardthreeroad[i]
-//       })
-
-// }
-
-// var cardthreeroadleft = document.querySelectorAll('.threeroadleft');
-      
-// for(let i=0;i<cardthreeroadleft.length;i++){
-//    cardthreeroadleft[i].addEventListener('click',function(){
-//       cardthreeroadleft[i]
-//       })
-
-// }
-// oxo.player.setScore
+  pause2.addEventListener("click", function() {
+    pause.classList.toggle("hidden");
+    pause2.classList.toggle("hidden");
+  });
+};
