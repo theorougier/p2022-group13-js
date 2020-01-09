@@ -1,0 +1,22 @@
+.background__end {
+    display: flex;
+    justify-content: center;
+    background-image: url("/screens/img/Niveau_1_GAME_Win.png");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .credit {
+    position: relative;
+    background-image: url("/screens/img/credit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 255px;
+    height: 65px;
+    top: 650px;
+    left: 20px;
+    border-radius: 10px;
+  }
