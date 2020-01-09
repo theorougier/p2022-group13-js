@@ -8,13 +8,20 @@ oxo.screens.loadScreen("home", function() {
     oxo.screens.loadScreen("instructions", loadInstruction);
   });
 
+  const btn7 = document.querySelector(".Menu__credit");
+  btn7.addEventListener("click", function() {
+    oxo.screens.loadScreen("Credits", loadcredit);
+  });
 
+  const loadcredit = function() {
   
+  }
   let homeMusic = document.getElementById("homeMusic"); 
   homeMusic.play();
 
   
 });
+
 
 const loadInstruction = function() {
   const btn2 = document.querySelector(".instruction__button");
