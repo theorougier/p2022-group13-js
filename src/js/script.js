@@ -98,4 +98,3 @@ const loadGame = function() {
     pause.classList.toggle("hidden");
     pause2.classList.toggle("hidden");
   });
-};
