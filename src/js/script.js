@@ -36,8 +36,6 @@ const loadInstruction = function() {
 const loadGame = function() {
 
 
-
-
   let gameMusic= document.getElementById("gameMusic"); 
   gameMusic.play();
 
@@ -57,7 +55,6 @@ const loadGame = function() {
     game3Music.currentTime = 0;
 
   });
-
 
 
 
@@ -161,14 +158,12 @@ const loadGame = function() {
  function trap() {
    life++;
    document.querySelector(".gameplay__heart"+life).classList.add("hidden");
-   let trapMusic = document.getElementById("trapMusic"); 
-   trapMusic.play();
+
    if (life === 3){
 
 
-      oxo.screens.loadScreen("gameover")
-      
 
+      oxo.screens.loadScreen("gameover");
 
  }
  }
