@@ -1,10 +1,19 @@
+
 let life = 0;
 
 oxo.screens.loadScreen("home", function() {
+ 
   const btn = document.querySelector(".Menu__play");
   btn.addEventListener("click", function() {
     oxo.screens.loadScreen("instructions", loadInstruction);
   });
+
+
+  
+  let homeMusic = document.getElementById("homeMusic"); 
+  homeMusic.play();
+
+  
 });
 
 const loadInstruction = function() {
@@ -12,6 +21,8 @@ const loadInstruction = function() {
   btn2.addEventListener("click", function() {
     oxo.screens.loadScreen("game", loadGame);
   });  
+  let homeMusic = document.getElementById("homeMusic"); 
+  homeMusic.play();
 };
 
 const loadGame = function() {
@@ -19,6 +30,9 @@ const loadGame = function() {
    btn3.addEventListener("click", function() {
      oxo.screens.loadScreen("home", loadReturn);
    });
+
+     document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
+       var life = 0;
 
    let pause2 = document.querySelector(".depause");
   let pause = document.querySelector(".niv");
@@ -105,6 +119,7 @@ const loadGame = function() {
       target.classList.add('selectable');
    }
  }
+
  function trap() {
    life++;
    document.querySelector(".gameplay__heart"+life).classList.add("hidden");
@@ -113,5 +128,24 @@ const loadGame = function() {
       oxo.screens.loadScreen("gameover",loadGameOver)
       
  }
+
+  const btn3 = document.querySelector(".return");
+  btn3.addEventListener("click", function() {
+    oxo.screens.loadScreen("home", loadReturn);
+  });
+
+  const loadReturn = function() {};
+  let pause2 = document.querySelector(".depause");
+  let pause = document.querySelector(".niv");
+  let boutonpause = document.querySelector(".pause");
+  boutonpause.addEventListener("click", function() {
+    pause.classList.toggle("hidden");
+    pause2.classList.toggle("hidden");
+  });
+
+  pause2.addEventListener("click", function() {
+    pause.classList.toggle("hidden");
+    pause2.classList.toggle("hidden");
+  });
 };
 
