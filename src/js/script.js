@@ -123,8 +123,8 @@ const loadGame = function() {
    document.querySelector(".gameplay__heart"+life).classList.add("hidden");
 
    if (life === 3){
-      oxo.screens.loadScreen("gameover",loadGameOver)
-      
+      oxo.screens.loadScreen("gameover")
+      console.log("lol")
  }
 }
 }
