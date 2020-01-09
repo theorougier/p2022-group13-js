@@ -1,4 +1,4 @@
-oxo.screens.loadScreen("game3", loadGame);
+oxo.screens.loadScreen("game2", loadGame);
 
 // oxo.screens.loadScreen("home", function() {
 //   const btn = document.querySelector(".Menu__play");
@@ -18,6 +18,19 @@ oxo.screens.loadScreen("game3", loadGame);
 // };
 
 function loadGame() {
+   var life = 0;
+
+   var cardtrap=document.querySelectorAll('.trap');
+   for(let j=0;j<cardtrap.length;j++){
+      cardtrap[j].addEventListener('click', function() {
+         life++;
+         document.querySelector(".gameplay__heart"+life).classList.add("hidden");
+         //console.log(i, document.querySelector(".gameplay__heart"+i));
+         // (".gameplay__heart"+i)
+         //console.log("rrr")
+     })
+   }
+   
    document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
       card.addEventListener('click', function() {
          if (card.classList.contains('selectable')) {
@@ -93,7 +106,8 @@ function loadGame() {
       target.classList.add('selectable');
    }
  }
- 
+
+
  
  
 //
