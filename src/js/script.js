@@ -1,5 +1,5 @@
 
-
+let life = 0;
 
 oxo.screens.loadScreen("home", function() {
  
@@ -26,20 +26,30 @@ const loadInstruction = function() {
 };
 
 const loadGame = function() {
+   const btn3 = document.querySelector(".return");
+   btn3.addEventListener("click", function() {
+     oxo.screens.loadScreen("home", loadReturn);
+   });
 
      document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
        var life = 0;
 
-   var cardtrap=document.querySelectorAll('.trap');
-   for(let j=0;j<cardtrap.length;j++){
-      cardtrap[j].addEventListener('click', function() {
-         life++;
-         document.querySelector(".gameplay__heart"+life).classList.add("hidden");
-         //console.log(i, document.querySelector(".gameplay__heart"+i));
-         // (".gameplay__heart"+i)
-         //console.log("rrr")
-     })
-   }
+   let pause2 = document.querySelector(".depause");
+  let pause = document.querySelector(".niv");
+  let boutonpause = document.querySelector(".pause");
+  boutonpause.addEventListener("click", function() {
+    pause.classList.toggle("hidden");
+    pause2.classList.toggle("hidden");
+  });
+
+  pause2.addEventListener("click", function() {
+    pause.classList.toggle("hidden");
+    pause2.classList.toggle("hidden");
+  });
+
+
+     document.querySelectorAll('.card__foret, .card__city, .card__castle').forEach(function(card) {
+      
       card.addEventListener('click', function() {
          if (card.classList.contains('selectable')) {
             card.remove();
@@ -66,8 +76,11 @@ const loadGame = function() {
                   threeroad(row, column)
                   break;
                case 'threeroadleft' :
-                     threeroadleft(row, column)
-                     break;
+                  threeroadleft(row, column)
+                  break;
+               case 'trap':
+                  trap();
+                  break;
                default:
                   break;
             }
@@ -105,6 +118,15 @@ const loadGame = function() {
    if (target) {
       target.classList.add('selectable');
    }
+ }
+
+ function trap() {
+   life++;
+   document.querySelector(".gameplay__heart"+life).classList.add("hidden");
+
+   if (life === 3){
+      oxo.screens.loadScreen("gameover",loadGameOver)
+      
  }
 
   const btn3 = document.querySelector(".return");
