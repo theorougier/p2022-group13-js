@@ -31,6 +31,10 @@ const loadGame = function() {
    btn3.addEventListener("click", function() {
      oxo.screens.loadScreen("home", loadReturn);
    });
+   const loadReturn = function() {
+
+   }
+
 
    let pause2 = document.querySelector(".depause");
   let pause = document.querySelector(".niv");
