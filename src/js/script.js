@@ -9,12 +9,12 @@ oxo.screens.loadScreen("home", function() {
     oxo.screens.loadScreen("instructions", loadInstruction);
   });
 
-
+if(lvl === 0){
   
   let homeMusic = document.getElementById("homeMusic"); 
   homeMusic.play();
 
-  
+}
 });
 
 const loadInstruction = function() {
@@ -147,7 +147,15 @@ const level2 = () => {
    loadGame();
    const EndNiv2 = document.querySelector(".endgame1")
    EndNiv2.addEventListener('click', function(){
-     oxo.screens.loadScreen("game3", loadGame)
+     oxo.screens.loadScreen("game3", level3)
+   })
+}
+
+const level3 = ()=> {
+   loadGame();
+   const EndNiv3 = document.querySelector(".engame2")
+   EndNiv3.addEventListener('click', function(){
+      oxo.screens.loadScreen("end", loadGame)
    })
 }
 
